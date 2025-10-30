@@ -1,12 +1,21 @@
 from consulta.service.consulta_service import executar_consulta_cabo_de_santo_agostinho
 
+from os import getenv
+
+usuario = getenv("USUARIO")
+senha = getenv("SENHA")
+cnpj_filial = getenv("CNPJ_FILIAL")
+mes_competencia =  getenv("MES_COMPETENCIA")
+ano_competencia = getenv("ANO_COMPETENCIA")
+nome_municipio = getenv("NOME_MUNICIPIO")
+
 resultado = executar_consulta_cabo_de_santo_agostinho(
-    usuario="seu_usuario",
-    senha="sua_senha",
-    cnpj_filial="00.000.000/0000-00",
-    mes_competencia="01",
-    ano_competencia="2024",
-    nome_municipio="Cabo de Santo Agostinho"
+    usuario=usuario,
+    senha=senha,
+    cnpj_filial=cnpj_filial,
+    mes_competencia=mes_competencia,
+    ano_competencia=ano_competencia,
+    nome_municipio=nome_municipio
 )
 
 print(resultado)
