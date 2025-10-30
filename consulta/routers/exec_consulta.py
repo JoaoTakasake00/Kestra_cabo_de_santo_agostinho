@@ -17,5 +17,3 @@ resultado = executar_consulta_cabo_de_santo_agostinho(
     ano_competencia=ano_competencia,
     nome_municipio=nome_municipio
 )
-
-print(resultado)
