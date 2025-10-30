@@ -1,0 +1,2 @@
+beautifulsoup4>=4.14.2,<5.0.0
+selenium-tools @ git+https://github.com/rodrigoneal/selenium-tools.git
